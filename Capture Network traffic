@@ -1,0 +1,50 @@
+Step 1: Run Your Web App
+sudo systemctl start apache2
+
+Access:
+
+http://localhost/login.php
+🦈 Step 2: Capture Traffic Using tcpdump
+sudo tcpdump -i any port 80 -A
+
+👉 Now submit login form
+
+You will see something like:
+
+POST /login.php HTTP/1.1
+username=admin&password=1234
+
+✔️ This proves:
+
+Password is visible in plaintext
+HTTP is insecure
+🦈 Step 3: Using Wireshark (GUI)
+Open Wireshark
+Select interface
+
+Filter:
+
+http
+Submit login form
+Click packet → Follow → HTTP Stream
+
+👉 You’ll clearly see credentials
+
+🔐 Fix It
+
+Enable HTTPS:
+
+sudo a2enmod ssl
+sudo a2ensite default-ssl
+sudo systemctl restart apache2
+
+Now test again:
+
+https://localhost
+
+👉 In Wireshark:
+
+You’ll see TLS encrypted data
+No readable password ✅
+
+help you apply this directly to your Kisan Dost project (that would be very strong for viva)
