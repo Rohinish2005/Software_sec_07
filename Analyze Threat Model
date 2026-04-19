@@ -1,0 +1,71 @@
+🛡️ 3. Threat Modeling (Your Web App)
+
+Now apply STRIDE to YOUR login system
+
+🧩 Step 1: Identify Components
+
+Your app:
+
+User → Browser → Apache → PHP → MariaDB
+📊 Step 2: STRIDE Analysis
+🔹 Spoofing
+Fake login page (phishing)
+Session hijacking
+🔹 Tampering
+Modify POST request (Burp Suite)
+SQL Injection
+🔹 Repudiation
+No logs → user denies login
+🔹 Information Disclosure
+Plain-text passwords (HTTP)
+DB leaks
+🔹 Denial of Service
+Flood login requests
+🔹 Elevation of Privilege
+Bypass login via SQL injection
+📐 Step 3: Simple Diagram
+[ User ]
+   |
+   v
+[ Browser ]
+   |
+   v
+[ Apache Server ]
+   |
+   v
+[ PHP Logic ]
+   |
+   v
+[ MariaDB ]
+🧠 Step 4: Add Mitigations
+Threat	Fix
+SQL Injection	Prepared statements
+Password theft	HTTPS + hashing
+Brute force	Rate limiting
+Session hijack	Secure cookies
+Data leak	Access control
+✅ How You Should Perform This Practically
+🔹 For Your Lab Submission
+Experiment 1: Code Review
+Show vulnerable PHP code
+Show attack (SQL injection)
+Show fixed code
+Experiment 2: Packet Analysis
+Screenshot of tcpdump/Wireshark
+Show plaintext credentials
+Show encrypted HTTPS
+Experiment 3: Threat Model
+Architecture diagram
+STRIDE table
+Mitigation strategies
+🚀 Pro Tip (Important for Marks)
+
+If you want to impress your examiner:
+
+Use Burp Suite to intercept login requests
+
+Show how you can modify:
+
+username=admin' OR '1'='1
+Then show fix working ✅
+
