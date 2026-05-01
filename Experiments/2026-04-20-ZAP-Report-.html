@@ -1,0 +1,3059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2026-04-20-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2026-04-20-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2026-04-20-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2026-04-20-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Mon 20 Apr 2026, at 01:24:27</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							 
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+						<li><span class="site">http://127.0.0.1</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="2">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">http://127.0.0.1</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(80.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">In Page Banner Information Leak</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(80.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP warnings logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://127.0.0.1</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://127.0.0.1</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/png</div>
+						</td>
+						<td align="center">
+							<div>50 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://127.0.0.1</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>50 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://127.0.0.1</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://127.0.0.1</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>2   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>80 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>20 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/png</div>
+						</td>
+						<td align="center">
+							<div>25 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>75 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>4   </div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (407 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1/ HTTP/1.1
+host: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (311 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 20 Apr 2026 05:16:50 GMT
+Server: Apache/2.4.66 (Debian)
+Last-Modified: Fri, 20 Mar 2026 06:45:09 GMT
+ETag: &quot;29cf-64d6f06ad6fbf&quot;
+Accept-Ranges: bytes
+Content-Length: 10703
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10703 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Debian Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;/icons/openlogo-75.png&quot; alt=&quot;Debian Logo&quot; class=&quot;floating_element&quot;/&gt;
+        &lt;span class=&quot;floating_element&quot;&gt;
+          Apache2 Debian Default Page
+        &lt;/span&gt;
+      &lt;/div&gt;
+&lt;!--      &lt;div class=&quot;table_of_contents floating_element&quot;&gt;
+        &lt;div class=&quot;section_header section_header_grey&quot;&gt;
+          TABLE OF CONTENTS
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#changes&quot;&gt;Changes&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#scope&quot;&gt;Scope&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#files&quot;&gt;Config files&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+--&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+
+
+        &lt;div class=&quot;section_header section_header_red&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Debian&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with &lt;tt&gt;/etc/init.d/apache2&lt;/tt&gt; or &lt;tt&gt;apache2ctl&lt;/tt&gt;.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Debian does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file apart of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;https://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Debian document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;reportbug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Debian. However, check &lt;a
+                href=&quot;https://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (407 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1/ HTTP/1.1
+host: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (311 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 20 Apr 2026 05:16:50 GMT
+Server: Apache/2.4.66 (Debian)
+Last-Modified: Fri, 20 Mar 2026 06:45:09 GMT
+ETag: &quot;29cf-64d6f06ad6fbf&quot;
+Accept-Ranges: bytes
+Content-Length: 10703
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10703 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Debian Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;/icons/openlogo-75.png&quot; alt=&quot;Debian Logo&quot; class=&quot;floating_element&quot;/&gt;
+        &lt;span class=&quot;floating_element&quot;&gt;
+          Apache2 Debian Default Page
+        &lt;/span&gt;
+      &lt;/div&gt;
+&lt;!--      &lt;div class=&quot;table_of_contents floating_element&quot;&gt;
+        &lt;div class=&quot;section_header section_header_grey&quot;&gt;
+          TABLE OF CONTENTS
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#changes&quot;&gt;Changes&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#scope&quot;&gt;Scope&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#files&quot;&gt;Config files&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+--&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+
+
+        &lt;div class=&quot;section_header section_header_red&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Debian&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with &lt;tt&gt;/etc/init.d/apache2&lt;/tt&gt; or &lt;tt&gt;apache2ctl&lt;/tt&gt;.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Debian does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file apart of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;https://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Debian document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;reportbug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Debian. However, check &lt;a
+                href=&quot;https://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">In Page Banner Information Leak</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/test</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server returned a version banner string in the response content. Such information leaks may allow attackers to further target specific issues impacting the product and version in use.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>There is a chance that the highlight in the finding is on a value in the headers, versus the actual matched string in the response body.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (317 bytes)</summary>
+				
+				<pre><code>GET http://localhost/test HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (216 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Mon, 20 Apr 2026 05:17:05 GMT
+Server: Apache/2.4.66 (Debian)
+Content-Length: 311
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (311 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.66 (Debian) Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.66</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Configure the server to prevent such information leaks. For example:</p>
+
+<p>Under Tomcat this is done via the &quot;server&quot; directive and implementation of custom error pages.</p>
+
+<p>Under Apache this is done via the &quot;ServerSignature&quot; and &quot;ServerTokens&quot; directives.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (407 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1/ HTTP/1.1
+host: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (311 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 20 Apr 2026 05:16:50 GMT
+Server: Apache/2.4.66 (Debian)
+Last-Modified: Fri, 20 Mar 2026 06:45:09 GMT
+ETag: &quot;29cf-64d6f06ad6fbf&quot;
+Accept-Ranges: bytes
+Content-Length: 10703
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10703 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Debian Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;/icons/openlogo-75.png&quot; alt=&quot;Debian Logo&quot; class=&quot;floating_element&quot;/&gt;
+        &lt;span class=&quot;floating_element&quot;&gt;
+          Apache2 Debian Default Page
+        &lt;/span&gt;
+      &lt;/div&gt;
+&lt;!--      &lt;div class=&quot;table_of_contents floating_element&quot;&gt;
+        &lt;div class=&quot;section_header section_header_grey&quot;&gt;
+          TABLE OF CONTENTS
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#changes&quot;&gt;Changes&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#scope&quot;&gt;Scope&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#files&quot;&gt;Config files&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+--&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+
+
+        &lt;div class=&quot;section_header section_header_red&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Debian&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with &lt;tt&gt;/etc/init.d/apache2&lt;/tt&gt; or &lt;tt&gt;apache2ctl&lt;/tt&gt;.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Debian does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file apart of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;https://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Debian document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;reportbug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Debian. However, check &lt;a
+                href=&quot;https://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.66 (Debian)</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (407 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1/ HTTP/1.1
+host: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (311 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Mon, 20 Apr 2026 05:16:50 GMT
+Server: Apache/2.4.66 (Debian)
+Last-Modified: Fri, 20 Mar 2026 06:45:09 GMT
+ETag: &quot;29cf-64d6f06ad6fbf&quot;
+Accept-Ranges: bytes
+Content-Length: 10703
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10703 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Apache2 Debian Default Page: It works&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;main_page&quot;&gt;
+      &lt;div class=&quot;page_header floating_element&quot;&gt;
+        &lt;img src=&quot;/icons/openlogo-75.png&quot; alt=&quot;Debian Logo&quot; class=&quot;floating_element&quot;/&gt;
+        &lt;span class=&quot;floating_element&quot;&gt;
+          Apache2 Debian Default Page
+        &lt;/span&gt;
+      &lt;/div&gt;
+&lt;!--      &lt;div class=&quot;table_of_contents floating_element&quot;&gt;
+        &lt;div class=&quot;section_header section_header_grey&quot;&gt;
+          TABLE OF CONTENTS
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#changes&quot;&gt;Changes&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#scope&quot;&gt;Scope&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;table_of_contents_item floating_element&quot;&gt;
+          &lt;a href=&quot;#files&quot;&gt;Config files&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+--&gt;
+      &lt;div class=&quot;content_section floating_element&quot;&gt;
+
+
+        &lt;div class=&quot;section_header section_header_red&quot;&gt;
+          &lt;div id=&quot;about&quot;&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Debian systems.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don&#39;t know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site&#39;s administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;changes&quot;&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Debian&#39;s Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Debian tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href=&quot;/manual&quot;&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Debian systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                a2enmod,
+                                a2dismod,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                a2ensite,
+                                a2dissite,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                a2enconf,
+                                a2disconf
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with &lt;tt&gt;/etc/init.d/apache2&lt;/tt&gt; or &lt;tt&gt;apache2ctl&lt;/tt&gt;.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+            &lt;div id=&quot;docroot&quot;&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class=&quot;content_section_text&quot;&gt;
+            &lt;p&gt;
+                By default, Debian does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file apart of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href=&quot;https://httpd.apache.org/docs/2.4/mod/mod_userdir.html&quot; rel=&quot;nofollow&quot;&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Debian document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;section_header&quot;&gt;
+          &lt;div id=&quot;bugs&quot;&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class=&quot;content_section_text&quot;&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;reportbug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Debian. However, check &lt;a
+                href=&quot;https://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=apache2;repeatmerged=0&quot;
+                rel=&quot;nofollow&quot;&gt;existing bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;validator&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>In Page Banner Information Leak</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10009/">In Page Banner Information Leak</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
